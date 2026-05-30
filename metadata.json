@@ -1,0 +1,8 @@
+{
+  "name": "Aura Somatic Club",
+  "description": "An elite fitness sanctuary, high-end gym, and recovery atelier featuring interactive bespoke training scheduling, movement exploration, and luxury somatic conditioning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

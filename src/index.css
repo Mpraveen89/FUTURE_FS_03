@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* High-impact blocky sans display instead of gentle serif */
+  --font-serif: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-cream-50: #080808;
+  --color-cream-100: #101010;
+  --color-cream-200: #161616;
+  --color-cream-300: #222222;
+  --color-cream-400: #3f3f3f;
+  --color-cream-500: #ff3333;
+  --color-cream-600: #e11d48;
+  --color-cream-700: #ff2e2e;
+  --color-cream-800: #f5f5f5;
+  --color-cream-950: #040404;
+
+  /* Redefined colors for cyber-iron matte black & high-voltage crimson red */
+  --color-luxury-50: #080808;
+  --color-luxury-100: #101010;
+  --color-luxury-200: #161616;
+  --color-luxury-300: #222222;
+  --color-luxury-400: #333333;
+  --color-luxury-500: #e11d48;
+  --color-luxury-600: #ff3e3e;
+  --color-luxury-700: #ff2e2e; /* Primary cyber red */
+  --color-luxury-800: #ffffff;
+  --color-luxury-900: #f5f5f5;
+  --color-luxury-950: #040404;
+
+  --color-gold-50: #ffffff;
+  --color-gold-100: #ffebeb;
+  --color-gold-200: #ffc2c2;
+  --color-gold-300: #ff8585;
+  --color-gold-400: #ff4d4d;
+  --color-gold-500: #ff2e2e;
+  --color-gold-600: #ef4444;
+  --color-gold-700: #c1121f;
+  --color-gold-800: #780000;
+  --color-gold-900: #500000;
+  --color-gold-950: #0d0101;
+}
+
+/* Base resets & global styles matching Hardcore Cyber-Iron Club */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-luxury-50);
+  color: var(--color-luxury-900);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+::selection {
+  background-color: var(--color-luxury-700);
+  color: #ffffff;
+}
+
+/* Hard industrial custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-luxury-950);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-luxury-300);
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-luxury-700);
+}
+
+/* Hard theme focus styles */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #ff2e2e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
